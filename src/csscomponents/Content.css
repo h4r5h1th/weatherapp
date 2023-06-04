@@ -1,0 +1,138 @@
+.Contentdiv{
+    text-align: center;
+    margin-top: 20px;
+}
+
+.gridcontent{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 25% 40%;
+    grid-template-areas:
+      "a a b"
+      "a a b"
+      "c d e";
+    margin: auto;
+    border-radius: 70px;
+    background-color: rgb(255, 255, 255, 0.85);
+    height: 80vh;
+    width: 70%;
+}
+
+.item1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-area: a;
+}
+
+.item2{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    margin-bottom: 20px;
+    margin-right: 10px;
+    grid-area: b;
+    font-weight: 500;
+    font-size: 90px;
+}
+.item3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-area: c;
+    font-weight: 600;
+    font-size: 100%;
+}
+.item4{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-area: d;
+    font-weight: 600;
+    font-size: 100%;
+}
+.item5{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-area: e;
+    font-weight: 600;
+    font-size: 100%;
+}
+
+.weatherimg{
+    size: 10px;
+    height: 250px;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .gridcontent{
+        height: 80vh;
+        width: 90%;
+    }
+    .item2{
+        margin-right: 10px;
+        margin-top: 150px;
+        align-items: center;
+        font-weight: 500;
+        font-size: 40px;
+    }
+    .item3{
+        margin: 5px;
+        font-weight: 600;
+        font-size: 14px;
+    }
+    .item4{
+        margin: 5px;
+        font-weight: 600;
+        font-size: 14px;
+    }
+    .item5{
+        margin: 5px;
+        font-weight: 600;
+        font-size: 14px;
+    }
+    .weatherimg{
+        height: 200px;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    .item3{
+        margin: 5px;
+        font-weight: 600;
+        font-size: 20px;
+    }
+    .item4{
+        margin: 5px;
+        font-weight: 600;
+        font-size: 20px;
+    }
+    .item5{
+        margin: 5px;
+        font-weight: 600;
+        font-size: 20px;
+    }
+}
+
+@media only screen and (min-width: 1440px) {
+    .item3{
+        margin: 5px;
+        font-weight: 600;
+        font-size: 25px;
+    }
+    .item4{
+        margin: 5px;
+        font-weight: 600;
+        font-size: 25px;
+    }
+    .item5{
+        margin: 5px;
+        font-weight: 600;
+        font-size: 25px;
+    }
+    .weatherimg{
+        height: 500px;
+    }
+}
